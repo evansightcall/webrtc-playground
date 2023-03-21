@@ -2,7 +2,7 @@ var constraintList = document.getElementById('constraint-list');
 const mdnList = ["autoGainControl","width","height","aspectRatio","frameRate","facingMode","resizeMode","volume Deprecated Non-standard","sampleRate","sampleSize","echoCancellation","latency","noiseSuppression","channelCount","deviceId","groupId","displaySurface","logicalSurface"];
 
 function testConstraint(constraint) {
-    return MediaDevices.getSupportedConstraints().hasOwnProperty(constraint);
+    return navigator.mediaDevices.getSupportedConstraints().hasOwnProperty(constraint);
 }
 
 
