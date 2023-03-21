@@ -9,7 +9,7 @@ function testConstraint(constraint) {
 
 
 function addListItem(key, value) {
-    const el = "<li>" + key + ": " + value + "</li>";
+    const el = document.createElement("<li>" + key + ": " + value + "</li>");
     constraintList.appendChild(el);
 }
 
